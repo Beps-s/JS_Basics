@@ -10,8 +10,8 @@ console.log(typeof name);
 const number = 17;
 console.log(typeof number);
 
-const persent = 50.3;
-console.log(typeof persent);
+const percent = 50.3;
+console.log(typeof percent);
 
 // Boolean
 const tunnis = true;
@@ -22,7 +22,7 @@ const airplane = null;
 console.log(typeof airplane);
 
 // Undefined
-const test;
+let test;
 console.log(typeof test);
 
 // Symbol
