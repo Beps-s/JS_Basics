@@ -1,42 +1,25 @@
-let val;
+const num1 = 100;
+const num2 = 50;
 
-// nubmer to string
-val = String(555);
-val = String(4+4);
-val = String(5.6);
+let result
 
-// boolean to string
-val = String(true);
-val = String(false);
+result = num1 + num2;
+result = num1 - num2;
+result = num1 * num2;
+result = num1 / num2;
+result = num1 % num2;
 
-// objekt to string
-val = String(new Date());
+// Math
+result = Math.PI;
+result = Math.round(2.5);
+result = Math.ceil(2.5);
+result = Math.floor(2.5);
+result = Math.sqrt(64);
+result = Math.abs(-3);
+result = Math.pow(8, 2);
+result = Math.min(90, 190, 5, 1000, 900);
+result = Math.max(90, 190, 5, 1000, 900);
 
-// masiiv to string
-val = String([1, 3, 5]);
+result = Math.round(Math.random()* 11);
 
-// to String
-val = (5).toString();
-val = (true).toString();
-
-// string to number
-val = Number("5");
-
-// boolean to number
-val = Number(true);
-
-// null to number
-val = Number(null);
-
-// tekst to number
-val = Number('tere');
-
-// masiiv to number
-val = Number([1, 2, 3]);
-
-// string to number
-val = parseInt('100.30');
-val = parseFloat('100.30');
-
-console.log(typeof val);
-console.log(val);
+console.log(result);
