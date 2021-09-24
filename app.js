@@ -1,38 +1,28 @@
 const name = 'Chris';
-const surname = 'Erman';
-const age = 17;
-const text = 'Tere, olen Chris';
-const tags = 'arendus, operatsiooni systeemid, programmeerimine';
+const age = '17';
+const job = 'opilane'
+const city = 'Tartu'
 
-let val;
+let html;
 
-val = name + ' ' + surname;
+// es5
+html = '<ul>' +
+			'<li>' + name + '</li>' +
+			'<li>' + age + '</li>' +
+			'<li>' + job + '</li>' +
+			'<li>' + city + '</li>' +
+		'</ul>';
 
-// append
-val = 'Chris ';
-val += surname;
+// es6
+html = `
+		<ul>
+			<li>${name}</li>
+			<li>${age}</li>
+			<li>${job}</li>
+			<li>${city}</li>
+		</ul>
+`;
 
-val = text + " Minu tegevusalad on " + tags;
+console.log(html);
 
-// escaping \
-
-val = 'See on \'jutumärkides\'';
-
-// suuruse vahetus
-val = name.toUpperCase();
-val = surname.toLowerCase();
-
-val = surname[0];
-val = surname.indexOf('a');
-val = surname.lastIndexOf('a');
-
-val = surname.charAt(2);
-val = surname.charAt(surname.length - 1);
-
-val = surname.substring(0, 4)
-val = surname.slice(0, 4)
-val = surname.slice(-3);
-
-
-val = tags.split(',');
-console.log(val);
+document.body.innerHTML = html;
