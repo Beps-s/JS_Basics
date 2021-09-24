@@ -1,25 +1,38 @@
-const num1 = 100;
-const num2 = 50;
+const name = 'Chris';
+const surname = 'Erman';
+const age = 17;
+const text = 'Tere, olen Chris';
+const tags = 'arendus, operatsiooni systeemid, programmeerimine';
 
-let result
+let val;
 
-result = num1 + num2;
-result = num1 - num2;
-result = num1 * num2;
-result = num1 / num2;
-result = num1 % num2;
+val = name + ' ' + surname;
 
-// Math
-result = Math.PI;
-result = Math.round(2.5);
-result = Math.ceil(2.5);
-result = Math.floor(2.5);
-result = Math.sqrt(64);
-result = Math.abs(-3);
-result = Math.pow(8, 2);
-result = Math.min(90, 190, 5, 1000, 900);
-result = Math.max(90, 190, 5, 1000, 900);
+// append
+val = 'Chris ';
+val += surname;
 
-result = Math.round(Math.random()* 11);
+val = text + " Minu tegevusalad on " + tags;
 
-console.log(result);
+// escaping \
+
+val = 'See on \'jutumärkides\'';
+
+// suuruse vahetus
+val = name.toUpperCase();
+val = surname.toLowerCase();
+
+val = surname[0];
+val = surname.indexOf('a');
+val = surname.lastIndexOf('a');
+
+val = surname.charAt(2);
+val = surname.charAt(surname.length - 1);
+
+val = surname.substring(0, 4)
+val = surname.slice(0, 4)
+val = surname.slice(-3);
+
+
+val = tags.split(',');
+console.log(val);
