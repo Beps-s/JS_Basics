@@ -1,51 +1,45 @@
-const id = 100;
-//let testid;
+/*const color = 'red';
 
-// == v6rdub
-// != ei v6rdu
-// === v6rdub ja toimub tyybikontroll
-// !== ei v6rdu ja toimub tyybikontroll
-
-//if(typeof testid > 'undefined'){
-//	console.log(`ID on ${id} - suurem kui 100.`);
-//} else{
-//	console.log(`ID on ${id} - v2iksem v6i v6rdne 100.`);
-//}
-
-//console.log(typeof testid);
-
-/*const color = "green";
-
-if(color === 'red'){
-	console.log('Stop');
-} else if(color === 'yellow'){
-	console.log('Attention');
-} else if(color === 'green'){
-	console.log('Go');
-} else {
-	console.log('Color is not accepted');
+switch(color){
+	case 'red':
+		console.log('Stop');
+		break;
+	case 'yellow':
+		console.log('Attention');
+		break;
+	case 'green':
+		console.log('Go');
+		break;
+	default:
+		console.log('Color not accepted');
+		break;
 }
 */
-const name = 'Kati';
-const age = 19;
 
-if(age > 0 && age <= 12){
-	console.log(`${name} on tatt`);
-} else if( age > 12 && age < 18){
-	console.log(`${name} on nooruk`);
-} else {
-	console.log(`${name} on t2iskasvanu`);
+let today = new Date('10/03/2021');
+let dayNumber = day.getDay();
+console.log(dayNumber);
+
+switch(dayNumber){
+	case '0':
+		console.log('Pyhap2ev');
+		break;
+	case '1':
+		console.log('Esmasp2ev');
+		break;
+	case '2':
+		console.log('Teisip2ev');
+		break;
+	case '3':
+		console.log('Kolmap2ev');
+		break;
+	case '4':
+		console.log('Neljap2ev');
+		break;
+	case '5':
+		console.log('Reede');
+		break;
+	case '6':
+		console.log('Laup2ev');
+		break;
 }
-
-if(age < 18 || age > 65){
-	console.log(`${name} ei saa registreerida`);
-} else {
-	console.log(`${name} on registreeritud`);
-}
-
-//console.log(id === 100 ? 'Õige' : 'Vale');
-
-if(id === 100) 
-	console.log('ID Korras');
-else 
-	console.log('ID Ei ole korras');
