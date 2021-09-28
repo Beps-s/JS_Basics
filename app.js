@@ -1,45 +1,51 @@
-/*const color = 'red';
+// for tsykkel
+for(let i = 0; i < 10; i++){
+	if(i == 5){
+		continue;
 
-switch(color){
-	case 'red':
-		console.log('Stop');
-		break;
-	case 'yellow':
-		console.log('Attention');
-		break;
-	case 'green':
-		console.log('Go');
-		break;
-	default:
-		console.log('Color not accepted');
-		break;
+	}
+	console.log(i)
 }
-*/
 
-let today = new Date('10/03/2021');
-let dayNumber = day.getDay();
-console.log(dayNumber);
+// while tsykkel
+let i = 0;
+while(i < 10){
+	console.log(i)
+	i++;
+}
 
-switch(dayNumber){
-	case '0':
-		console.log('Pyhap2ev');
-		break;
-	case '1':
-		console.log('Esmasp2ev');
-		break;
-	case '2':
-		console.log('Teisip2ev');
-		break;
-	case '3':
-		console.log('Kolmap2ev');
-		break;
-	case '4':
-		console.log('Neljap2ev');
-		break;
-	case '5':
-		console.log('Reede');
-		break;
-	case '6':
-		console.log('Laup2ev');
-		break;
+//do while tsykkel
+let j = 0;
+do {
+	console.log(j)
+	j++
+} while(j < 10);
+
+// tsyklid ja massiivid
+const cars = ['Ford', 'Honda', 'Toyota'];
+
+for(let i = 0; i < cars.length; i++){
+	console.log(cars[i])
+}
+
+// for each tsykkel
+cars.forEach(function(element, index, array){
+	console.log(`cars: ${index} = ${element}`)
+	console.log(array)
+});
+
+cars.forEach((element, index) => {
+	console.log(`cars: ${index} = ${element}`)
+});
+
+
+const person = {
+	firstName: 'Mati',
+	lastName: 'Karilaid',
+	age: 37
+}
+
+// for in tsykkel
+for(let key in person){
+	console.log(`${key} = ${person[key]}`)
 }
