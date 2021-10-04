@@ -1,14 +1,22 @@
-const li = document.createElement('li');
-const list = document.querySelector('ul');
-const link = document.createElement('a')
+const form = document.querySelector('form');
+const taskInput = document.querySelector('#task');
+const heading = document.querySelector('h4');
 
-li.className = 'collection-item';
-link.className ='secondary-content red-text text-darken-2';
+taskInput.value = '';
 
-li.appendChild(document.createTextNode('Study element creation'));
-link.appendChild(document.createTextNode('X'));
+// form.addEventListener('submit', runEvent);
 
-link.setAttribute('href', '#');
+// taskInput.addEventListener('keydown', runEvent);
+// taskInput.addEventListener('keyup', runEvent);
+// taskInput.addEventListener('keypress', runEvent);
+// taskInput.addEventListener('focus', runEvent);
+// taskInput.addEventListener('blur', runEvent);
+// taskInput.addEventListener('paste', runEvent);
+// taskInput.addEventListener('input', runEvent);
 
-list.appendChild(li);
-li.appendChild(link);
+
+function runEvent(e) {
+    console.log(`Event type: ${e.type}`);
+    heading.innerText = e.target.value;
+    // e.preventDefault();
+}
