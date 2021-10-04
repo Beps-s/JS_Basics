@@ -1,22 +1,20 @@
-const form = document.querySelector('form');
-const taskInput = document.querySelector('#task');
-const heading = document.querySelector('h4');
+const form=document.querySelector("form");
+const taskInput=document.getElementById("task");
+const heading=document.querySelector("h4");
+const li=document.createElement("li");
+const list=document.querySelector("ul");
 
-taskInput.value = '';
+li.className="collection-item";
+taskInput.value = "";
 
-// form.addEventListener('submit', runEvent);
+form.addEventListener("submit", addTask);
 
-// taskInput.addEventListener('keydown', runEvent);
-// taskInput.addEventListener('keyup', runEvent);
-// taskInput.addEventListener('keypress', runEvent);
-// taskInput.addEventListener('focus', runEvent);
-// taskInput.addEventListener('blur', runEvent);
-// taskInput.addEventListener('paste', runEvent);
-// taskInput.addEventListener('input', runEvent);
-
-
-function runEvent(e) {
-    console.log(`Event type: ${e.type}`);
-    heading.innerText = e.target.value;
-    // e.preventDefault();
+function addTask(){
+    li.appendChild(document.createTextNode(taskInput.value));
+    const link=document.createElement("a");
+    link.className="secondary-content red-text text-darken-2";
+    link.appendChild(document.createTextNode("X"));
+    link.setAttribute("href", "#");
+    li.appendChild(link);
+    list.appendChild(li);
 }
