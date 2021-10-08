@@ -5,6 +5,13 @@
 			<meta charset="utf-8">
 			<meta name="viewport" content="width=device-width, initial-scale=1.0">
 			<title>JS alused</title>
+		<style>
+			.button {
+  				text-decoration: none;
+  				background-color: #c21f40;
+  				padding: 6px 10px 6px 10px;
+			}
+		</style>
 	</head>
 	<body>
 		<div class="container">
@@ -26,7 +33,7 @@
         			</div>
         			<div class="card-action">
           				<h5 id="task-title">Tasks</h5>
-    						<ul class="collection">
+    						<ul id='myList' class="collection">
     							
       							<li class="collection-item"><a href="#" class="secondary-content red-text text-darken-2">X</a>JS</li>
       							
@@ -34,6 +41,7 @@
       							
       							<li class="collection-item"><a href="#" class="secondary-content red-text text-darken-2">X</a>CSS</li>
     						</ul>
+    						<a href="#" class="button white-text">Remove All</a>
        			 		</div>
       				</div>
         		</div>

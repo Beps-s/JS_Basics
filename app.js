@@ -1,9 +1,11 @@
 const form = document.querySelector('form');
 const taskInput = document.querySelector('#task');
-const taskList = document.querySelector('ul')
+const taskList = document.querySelector('ul');
+//const removeList = document.querySelector('ul');
 
 form.addEventListener('submit', addToList)
 taskList.addEventListener('click', removeFromList)
+//removeList.addEventListener('click', removeAll)
 
 function addToList(e) {
     const li = document.createElement('li');
@@ -26,6 +28,13 @@ function addToList(e) {
 }
 
 function removeFromList(a) {
-    const target = event.target.parentElement;
-    target.remove();
+    if(a.target.textContent == 'X'){
+        if(confirm("Kas soovite antud ylesande kustutada")){
+            a.target.parentElement.remove();
+        }
+    }
 }
+
+//function removeAll(){
+    //document.getElementById('myList').innerHTML = '';
+//}
